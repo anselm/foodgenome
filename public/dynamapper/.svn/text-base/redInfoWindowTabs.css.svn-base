@@ -1,0 +1,152 @@
+#custom_info_window_red{
+  width: 250px;
+  background-color: #FFF;
+}
+#custom_info_window_red_contents{
+  background-color: #FFF;
+}
+#custom_info_window_red_tl{
+  width: 16px;
+  height: 50px;
+  background: url('../images/corners/red_tab_tl.png') top left no-repeat transparent;
+}
+* html #custom_info_window_red_tl{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_tab_tl.png', sizingMethod='crop');
+}
+#custom_info_window_red_t{
+  background: url('../images/corners/red_tab_t.png') top left repeat-x transparent;
+}
+
+* html #custom_info_window_red_t{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_tab_t.png', sizingMethod='scale');
+}
+#custom_info_window_red_tr{
+  width: 16px;
+  height: 50px;
+  background: url('../images/corners/red_tab_tr.png') top left no-repeat transparent;
+}
+* html #custom_info_window_red_tr{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_tab_tr.png', sizingMethod='crop');
+}
+#custom_info_window_red_l{
+  width: 3px;
+  background: url('../images/corners/red_l.png') top left repeat-y transparent;
+}
+#custom_info_window_red_r{
+  width: 3px;
+  background: url('../images/corners/red_r.png') top right repeat-y transparent;
+}
+#custom_info_window_red_bl{
+  width: 16px;
+  height: 16px;
+  background: url('../images/corners/red_bl.png') top left no-repeat transparent;
+}
+* html #custom_info_window_red_bl{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_bl.png', sizingMethod='crop');
+}
+#custom_info_window_red_b{
+  background: url('../images/corners/red_b.png') top left repeat-x transparent;
+}
+#custom_info_window_red_br{
+  width: 16px;
+  height: 16px;
+  background: url('../images/corners/red_br.png') top left no-repeat transparent;
+}
+* html #custom_info_window_red_br{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_br.png', sizingMethod='crop');
+}
+#custom_info_window_red_close{
+  width: 21px;
+  height: 21px;
+  margin-top: 32px;
+  background: url('../images/corners/red_close.png') top left no-repeat transparent;
+  cursor: pointer;
+}
+* html #custom_info_window_red_close{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_close.png', sizingMethod='crop');
+}
+#custom_info_window_red_beak{
+  width: 28px;
+  height: 38px;
+  background: url('../images/corners/red_beak.png') top left no-repeat transparent;
+}
+* html #custom_info_window_red_beak{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_beak.png', sizingMethod='crop');
+}
+#custom_info_window_red_contents .section1{
+  margin: 0;
+  padding: 0;
+}
+#custom_info_window_red_contents .section2{
+  margin: 0;
+  padding: 0;
+  background-color: #FFDFDF;
+  border-bottom: dotted 1px #900;
+  border-top: dotted 1px #900;
+}
+#custom_info_window_red_contents .tab_contents p{
+  margin: 1px 0;
+  padding: 5px;
+}
+#custom_info_window_red_contents .title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #900;
+}
+
+/* styles for tabs part */
+.tabs_header{
+  position: absolute;
+  top: -31px;
+  left: 16px;
+  float: left;
+}
+#tab0, #tab1{
+  float: left;
+  background: url('../images/corners/red_tab.png') top left no-repeat transparent;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 60px;
+  height: 16px;
+}
+.tabs_header .tab p.contents{
+  margin: 5px 0 0 15px;
+  _margin-top: 4px;
+  padding: 0;
+}
+* html #tab0, * html #tab1{
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_tab.png', sizingMethod='crop');
+  height: 16px;
+  width: 60px;
+  padding: 0;
+  margin: 0;
+}
+.tab_contents{
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+}
+#tab0_content{
+  position: relative; 
+  top: 0;
+  left: 0;
+}
+#tab1_content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:none;
+}
+
+

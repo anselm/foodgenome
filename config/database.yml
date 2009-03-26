@@ -1,0 +1,26 @@
+rake: &defaults
+  adapter:  postgres
+  database: foodgenome	
+  username: foodgenome	
+  password: foodgenome	
+  host:     localhost
+  log_stream: STDOUT
+  log_level: 1
+
+development: &defaults
+  adapter:  postgres
+  database: foodgenome	
+  username: foodgenome	
+  password: foodgenome	
+  host:     localhost
+  log_stream: STDOUT
+  log_level: 1
+
+production: &defaults
+  adapter:  postgres
+  database: foodgenome	
+  username: foodgenome
+  password: foodgenome
+  host:     localhost
+  log_stream: STDOUT
+  log_level: 1

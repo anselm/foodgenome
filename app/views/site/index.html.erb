@@ -1,0 +1,9 @@
+<%
+@notes = Note.all()
+@notes.each do |note|
+%>
+<div>
+<%=note.title%>
+</div>
+<% end %>
+

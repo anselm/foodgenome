@@ -1,0 +1,274 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+
+}
+body {
+  line-height: 1;
+  border-top: solid #dff 20px;
+background: #eee;
+
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------------------------------------------
+=Default
+------------------------------------------------------------------------*/
+
+body {
+}
+
+p {
+color: #5a5a5a;
+ margin-bottom: 18px
+}
+
+/*------------------------------------------------------------------------
+=Typography
+------------------------------------------------------------------------*/
+
+h1 {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  color:#223366;
+}
+h2 {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  color:#222;
+}
+strong {
+ font-weight: bold;
+}
+
+em {
+ font-style: italic;
+}
+
+/*------------------------------------------------------------------------
+=Layout
+------------------------------------------------------------------------*/
+
+#wrapper {
+  margin: 0px auto;
+padding: 20px 10px;
+  width: 480px;
+  font: 14px/20px Arial, Verdana, sans-serif;
+background: #fff;
+}
+
+#header {
+  display: block;
+  height: 60px;
+  margin-bottom: 0px;
+  text-indent: -9999px;
+  width: 480px;
+  clear:	both;
+}
+
+
+#content {
+  margin-bottom: 0px;
+}
+
+#about_project {
+  font: 18px/25px Arial, Verdana, sans-serif;
+  color:#225;
+}
+
+#top_nav {
+}
+
+#thumb {
+    font: 13px/20px Arial, Verdana, sans-serif;
+    overflow:hidden;
+    border:2px solid #ccddf0;
+    margin:3px;
+    padding:2px;
+    width:130px;
+    height:240px;
+    text-align:left;
+    float:left;
+    vertical-align: top;
+    display:block;
+}
+
+/* this is the wrapper that forces the image size itself */
+#thumbinner {
+    display:block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+    vertical-align: middle;
+    overflow:hidden;
+    width:130px;
+    height:120px;
+}
+
+/*------------------------------------------------------------------------
+=Links
+------------------------------------------------------------------------*/
+
+a {
+
+}
+
+a:link {
+
+}
+a {
+	text-decoration: none;
+}
+
+a:visited {
+
+}
+
+
+a:hover { color: #f0c0c0; text-decoration: underline; }
+
+
+a:active {
+
+}
+
+/*------------------------------------------------------------------------
+=misc
+------------------------------------------------------------------------*/
+
+/* For clearing floats */
+
+.group:after {
+  content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/*------------------------------------------------------------------------
+=nav
+------------------------------------------------------------------------*/
+
+ul.nav {
+  list-style: none;
+}
+
+ul.nav li {
+  float: right;
+  padding: 6px;
+  margin: 2px;
+  background: #ffe0e0;
+  border: 0px solid #ffc0c0;
+  font: 14px/20px Arial, Verdana, sans-serif;
+}
+
+ul.nav li:first-child {
+}
+
+/*------------------------------------------------------------------------
+=imagewiki
+------------------------------------------------------------------------*/
+
+#imagewikilogo #logo  {
+	float:	left;
+}
+
+#imagewikilogo #taglinebox  {
+	float:	right;
+	width:	50%;
+}
+
+#tagline {
+	font-size:   20px;
+	margin:	15px 25%;
+	white-space:    nowrap;
+}
+
+#newimages img {
+	padding:	15px;
+}
+
+.main {
+	clear:	both;
+}
+
+/*---------------------------------------------------
+=Sign-in
+----------------------------------------------------*/
+
+#sign_in {
+  margin: 0px;
+  border:7px solid #bbccff;
+  background: #dff; 
+  padding:20px; 
+  width:340px;
+}
+
+#login  {
+  width: 250px;
+  height: 25px;
+}
+
+#password {
+  width: 250px;
+  height: 25px;
+}
+
+/*-----------------------------------------------------
+=Homepage Stylez
+--------------------------------------------------------*/
+
+#main_blurb {
+  color: #222;
+  margin: 11px;
+  padding: 10px 22px 27px 25px;
+  border: 8px solid #eee;
+}

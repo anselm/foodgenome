@@ -1,0 +1,79 @@
+<%
+
+# A bit of ruby code to step in and set header properties if not specified elsewhere
+if !defined?(@site_metatags)
+    @site_metatags = "food, foodgenome, makerlab, iphone, gis, geo, social, web"
+end
+
+if !defined?(@site_title)
+  @site_title = "foodgenome"
+end
+
+-%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title><%=@site_title%></title>
+<meta name = "viewport" content = "width=480" > 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="<%=@site_metatags%>"><link rel="icon" href="/images/favicon.ico" type="image/png"/> 
+<link type="text/css" title="makerlab" rel="Stylesheet" media="screen" href="/stylesheets/master.css"/>
+<%= @map.header() %>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="top_nav">
+<div style="float:left;"><a href="/"><img style="width: 183px; height: 34px; margin-right: 10px;" alt="foodgenome" src="/images/logo.jpg"></a> </div>
+<ul id="top_nav_list" class="nav group">
+<% if !logged_in? %>
+<li><%= link_to 'Sign up', "/signup" %> </li>
+<li><%= link_to 'Sign in', "/signin" %> </li>
+<li><%= link_to 'Search', "/search" %> </li>
+<li><%= link_to 'Recent', "/recent" %></li>
+<% else %>
+<li><%= link_to 'Sign out', "/signout" , :method => :delete %> </li>
+<li><%= link_to 'Search', "/search" %> </li>
+<li><%= link_to 'Add', "/add" %> </li>
+<li>Hi <%= link_to current_user.login.capitalize,"/users/#{current_user}" %>!</li> 
+<% end %>
+
+</div>
+
+<% if flash[:notice] || flash[:warning] %>
+<h1><font style="color:green"><%= flash[:notice] %></font></h1>
+<h1><font style="color: red"><%= flash[:warning] %></font></h1>
+<% end %>
+
+<div id="content" class="group">
+<%= catch_content :for_layout %>
+</div>
+
+<div id="footer" style="clear:both">
+<br/>
+<br/>
+<br/>
+<ul class="nav">
+<li><a href="http://blog.makerlab.com">Our Blog</a></li>
+<li><%= link_to 'About', "/about" %></li>
+<li><%= link_to 'Help!', "/help" %></li>
+</ul>
+<div style="clear:both;"/>
+</div>
+
+</div><!-- wrapper -->
+
+</body>
+
+<%= @map.tail %>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-846275-12");
+pageTracker._trackPageview();
+</script>
+
+</html>

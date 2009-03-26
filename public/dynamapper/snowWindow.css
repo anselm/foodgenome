@@ -1,0 +1,82 @@
+#snow_window{
+  width: 300px;
+}
+#snow_window_contents{
+  background: url(' ../images/corners/snowWindow_contents.png') bottom center no-repeat #C3D9FF;
+  font-family: "courier new";
+  font-size: 12px;
+}
+#snow_window_contents div{
+  font-style: italic;
+  margin: 0 10px;
+}
+#snow_window_tl{
+  width: 14px;
+  height: 14px;
+  background: url('../images/corners/snowWindow_tl.png') top left no-repeat transparent;
+}
+* html #snow_window_tl{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/snowWindow_tl.png', sizingMethod='crop');
+}
+#snow_window_t{
+  background: url('../images/corners/snowWindow_t.png') top left repeat-x transparent;
+}
+#snow_window_tr{
+  width: 14px;
+  height: 14px;
+  background: url('../images/corners/snowWindow_tr.png') top left no-repeat transparent;
+}
+* html #snow_window_tr{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/snowWindow_tr.png', sizingMethod='crop');
+}
+#snow_window_l{
+  width: 3px;
+  background: url('../images/corners/snowWindow_l.png') top left repeat-y transparent;
+}
+#snow_window_r{
+  width: 3px;
+  background: url('../images/corners/snowWindow_r.png') top right repeat-y transparent;
+}
+#snow_window_bl{
+  width: 14px;
+  height: 14px;
+  background: url('../images/corners/snowWindow_bl.png') top left no-repeat transparent;
+}
+* html #snow_window_bl{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/snowWindow_bl.png', sizingMethod='crop');
+}
+#snow_window_b{
+  background: url('../images/corners/snowWindow_b.png') top left repeat-x transparent;
+}
+#snow_window_br{
+  width: 14px;
+  height: 14px;
+  background: url('../images/corners/snowWindow_br.png') top left no-repeat transparent;
+}
+* html #snow_window_br{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/snowWindow_br.png', sizingMethod='crop');
+}
+#snow_window_close{
+  width: 57px;
+  height: 55px;
+  background: url('../images/corners/snowWindow_close.png') top left no-repeat transparent;
+  margin: -20px 0 0 20px;
+  cursor: pointer;
+}
+* html #snow_window_close{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/snowWindow_close.png', sizingMethod='crop');
+}
+#snow_window_beak{
+  width: 27px;
+  height: 37px;
+  background: url('../images/corners/snowWindow_beak.png') top left no-repeat transparent;
+}
+* html #snow_window_beak{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/snowWindow_beak.png', sizingMethod='crop');
+}

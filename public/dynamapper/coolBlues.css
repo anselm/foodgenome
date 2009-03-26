@@ -1,0 +1,45 @@
+#extInfoWindow_coolBlues{
+  width: 233px;
+}
+#extInfoWindow_coolBlues_contents{
+  background-color: #099;
+  color: #FFF;
+}
+#extInfoWindow_coolBlues_contents div{
+  padding: 10px;
+  font-size: 12px;
+  font-family: arial, helvetica, serif;
+}
+#extInfoWindow_coolBlues_tl, #extInfoWindow_coolBlues_tr, #extInfoWindow_coolBlues_bl, #extInfoWindow_coolBlues_br{
+  width: 1px;
+  height: 1px;
+  background-color: #004242;
+}
+#extInfoWindow_coolBlues_t, #extInfoWindow_coolBlues_b{
+  background-color: #004242;
+}
+#extInfoWindow_coolBlues_l, #extInfoWindow_coolBlues_r{
+  background-color: #004242;
+  width: 1px;
+}
+#extInfoWindow_coolBlues_close{
+  width: 20px;
+  height: 20px;
+  background: url('../images/corners/coolBlues_close.png') top left no-repeat transparent;
+  cursor: pointer;
+}
+* html #extInfoWindow_coolBlues_close{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/coolBlues_close.png', sizingMethod='crop');
+}
+#extInfoWindow_coolBlues_beak{
+	width: 235px;
+  height: 93px;
+  background: url('../images/corners/coolBlues_beak.png') top left no-repeat transparent;
+}
+* html #extInfoWindow_coolBlues_beak{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/coolBlues_beak.png', sizingMethod='crop');
+}
+
+

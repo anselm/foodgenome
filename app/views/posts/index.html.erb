@@ -1,0 +1,38 @@
+<%= @map.body %>
+<%
+
+@posts = Post.all(:kind => Post::KIND_POST, :order => [:created_at.desc] )
+
+@posts.each do |post|
+
+  # TODO what about cross scripting hacks?  verify
+
+  date = post.created_at
+  date = date.strftime(" at %I:%M%p %m/%d/%Y")
+  party = post.relation_get(Relation::RELATION_TWITTER_SCREEN_NAME) 
+  uuid = post.uuid
+
+  # get the user - i *do* think this is best pushed into the model as a method TODO
+  user = User.first(:id => post.owner_id)
+  login = ""
+  login = user.title if user
+
+  # pluck apart the string and remove the to @ part - TODO what a hack - cleanup
+  title = post.title
+  title = title[11..-1] if title[0..10] == "@foodgenome" 
+
+  # make the #hashmarks red for fun
+  title = title.split(" ").collect { |word|
+     word = "<span style='background-color:#e0a0a0;'>#{word}</span>" if word[0..0] == "#"
+     word
+  }.join(" ")
+
+%>
+
+<div>
+<a href="http://twitter.com/<%=login%>"><%=login%></a> <%=title%> at <%=date%><br/>
+</div>
+
+<%
+ end
+%>

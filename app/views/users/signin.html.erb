@@ -1,0 +1,16 @@
+<div style="margin-left:30px;">
+<h1><a href="/signup">Sign up instead?</a></h1>
+<div id="sign_in">
+<h1>Sign in </h1>
+<br/>
+<%= error_messages_for :user %>
+<%= form_for(:user, :action => "/signin", :method => "post", :enctype =>"multipart/form-data" ) do %>
+<p><label for="login">Name</label><br/>
+<%= text_field :login %></p>
+<p><label for="password">Password</label><br/>
+<%= password_field :password %></p>
+<p><%= submit 'Sign In' %></p>
+<% end =%>
+</div>
+</div>
+

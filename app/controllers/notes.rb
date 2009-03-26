@@ -1,0 +1,4 @@
+
+class Notes < Application
+
+end

@@ -1,0 +1,75 @@
+#extInfoWindow_funkyBox{
+  width: 240px;
+}
+#extInfoWindow_funkyBox_contents{
+  background-color: #FFF;
+}
+#extInfoWindow_funkyBox_tl{
+  width: 23px;
+  height: 23px;
+  background: url('../images/corners/funkyBox_tl.png') top left no-repeat transparent;
+}
+#extInfoWindow_funkyBox_t{
+  background: url('../images/corners/funkyBox_t.png') top left repeat-x #FFF;
+}
+#extInfoWindow_funkyBox_tr{
+  width: 22px;
+  height: 23px;
+  background: url('../images/corners/funkyBox_tr.png') top right no-repeat transparent;
+}
+* html #extInfoWindow_funkyBox_tr{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/funkyBox_tr.png', sizingMethod='crop');
+}
+#extInfoWindow_funkyBox_l{
+  background: url('../images/corners/funkyBox_l.png') top left repeat-y transparent;
+  width: 23px;
+}
+#extInfoWindow_funkyBox_r{
+  background: url('../images/corners/funkyBox_r.png') top right repeat-y transparent;
+  width: 2px;
+}
+#extInfoWindow_funkyBox_bl{
+  width: 23px;
+  height: 23px;
+  background: url('../images/corners/funkyBox_bl.png') top left no-repeat transparent;
+}
+* html #extInfoWindow_funkyBox_bl{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/funkyBox_bl.png', sizingMethod='crop');
+}
+#extInfoWindow_funkyBox_b{
+  height: 2px;
+  background: url('../images/corners/funkyBox_b.png') bottom left repeat-x #FFF;
+}
+#extInfoWindow_funkyBox_br{
+  width: 22px;
+  height: 23px;
+  background: url('../images/corners/funkyBox_br.png') top left no-repeat transparent;
+}
+* html #extInfoWindow_funkyBox_br{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/funkyBox_br.png', sizingMethod='crop');
+}
+#extInfoWindow_funkyBox_close{
+  width: 14px;
+  height: 14px;
+  margin: 22px 0 0 -10px;
+  background: url('../images/corners/funkyBox_close.png') top left no-repeat transparent;
+  cursor: pointer;
+}
+* html #extInfoWindow_funkyBox_close{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/funkyBox_close.png', sizingMethod='crop');
+}
+#extInfoWindow_funkyBox_beak{
+	width: 175px;
+  height: 42px;
+  background: url('../images/corners/funkyBox_beak.png') top left no-repeat transparent;
+}
+* html #extInfoWindow_funkyBox_beak{
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/funkyBox_beak.png', sizingMethod='crop');
+}
+
+

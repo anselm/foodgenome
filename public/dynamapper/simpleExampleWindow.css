@@ -1,0 +1,22 @@
+#simple_example_window{
+  width: 300px;
+}
+#simple_example_window_contents{
+  background-color: #FFF;
+  border: 3px solid  #900;
+}
+#simple_example_window_beak{
+  width: 28px;
+  height: 38px;
+  background: url('../images/corners/simple_beak.png') top left no-repeat transparent;
+}
+* html #simple_example_window_beak{
+  /* Alpha transparencies hack for IE */
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/corners/red_beak.png', sizingMethod='crop');
+}
+#simple_example_window_tl, #simple_example_window_tr, #simple_example_window_bl, #simple_example_window_br,
+#simple_example_window_t,#simple_example_window_l,#simple_example_window_r,#simple_example_window_b{
+  height: 0px;
+  width: 0px;
+}

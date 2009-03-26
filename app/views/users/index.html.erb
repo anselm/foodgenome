@@ -1,0 +1,5 @@
+<h1>Users</h1>
+<% for u in @users %>
+<a href="/users/<%=u.login%>"><%=u.login%><img src="<%=u.depiction%>"></img></a>
+<br/>
+<% end %>

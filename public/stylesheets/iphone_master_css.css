@@ -1,0 +1,380 @@
+
+
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------------------------------------------
+=Default
+------------------------------------------------------------------------*/
+
+body {
+ background: #fff;
+ font: 13px/20px Arial, Verdana, sans-serif;
+ color: #222;
+}
+
+p {
+ margin-bottom: 18px
+}
+
+/*------------------------------------------------------------------------
+=Layout
+------------------------------------------------------------------------*/
+
+#wrapper {
+  margin: 30px auto;
+  width: 820px;
+}
+
+
+#header #makerlab {
+  background: url(/img/logo-makerlab.png) no-repeat;
+  display: block;
+  height: 148px;
+  margin-bottom: 30px;
+  text-indent: -9999px;
+  width: 820px;
+}
+
+
+
+#content {
+  margin-bottom: 30px;
+}
+
+body#index #content span,
+body#our_projects #content span {
+  color: #737373;
+}
+
+#content .main {
+/*  float: left; 
+
+  width: 575px;
+
+*/ /* bnf */
+  font-size: 21px;
+  line-height: 40px;
+}
+
+#projects-show #proj_nav {
+  float: left;
+  margin-right: 30px;
+  width: 120px;
+}
+
+#projects-show .main {
+/*  width: 425px; */
+}
+
+#sidebar {
+  float: right;
+  width: 224px;
+}
+
+#sidebar .block {
+  background: #9b9b9b;
+  color: #fff;
+  margin-bottom: 6px;
+  padding: 20px;
+}
+
+#sidebar .block a {
+  background: url(/img/icon-arrow.png);
+  display: block;
+  float: right;
+  height: 15px;
+  text-indent: -9999px;
+  width: 14px;
+}
+
+#footer {
+  clear: both;
+}
+
+#footer ul {
+  float: left;
+}
+
+/* for cards */
+
+/* card stuff for 'who are we' will go here after javascript is implemented */
+
+/* for project page */
+
+ul#project_list {
+  margin: 0 auto;
+  width: 640px;
+}
+
+ul#project_list li {
+  float: left;
+  width: 160px;
+}
+
+ul#project_list li a {
+  color: #fff;
+  display: block;
+  padding: 2px;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------
+=Links
+------------------------------------------------------------------------*/
+
+a {
+
+}
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/*------------------------------------------------------------------------
+=misc
+------------------------------------------------------------------------*/
+
+/* For clearing floats */
+
+.group:after {
+  content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/*------------------------------------------------------------------------
+=nav
+------------------------------------------------------------------------*/
+
+/* default nav styling */
+
+ul.nav {
+  list-style: none;
+}
+
+ul.nav li {
+  float: left;
+}
+
+ul.nav li:first-child {
+  margin-left: 0;
+}
+
+/* main nav */
+
+#wrapper #header ul.nav {
+  border-bottom: 1px solid #5a5758;
+  margin-bottom: 30px;
+}
+
+#wrapper #header ul.nav li {
+  border-right: 1px solid #5a5758;
+  text-align: right;
+  width: 204px;
+}
+
+body#index #wrapper #header ul.nav li#what a {
+  background: url(/img/nav-gradient.png) no-repeat left bottom;
+  color: #000;
+}
+
+body#who_are_we #wrapper #header ul.nav li#who a {
+  background: url(/img/nav-gradient.png) no-repeat -204px bottom;
+  color: #000;
+}
+
+body#our_projects #wrapper #header ul.nav li#projects a {
+  background: url(/img/nav-gradient.png) no-repeat -408px bottom;
+  color: #000;
+}
+
+body#contact_us #wrapper #header ul.nav li#contact a {
+  background: url(/img/nav-gradient.png) no-repeat -612px bottom;
+  color: #000;
+}
+
+#wrapper #top_nav ul.nav li a, #wrapper #header ul.nav li a {
+  color: #818181;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+}
+#wrapper #top_nav ul.nav li a {
+  font-size: 12px;
+  padding: 0 0px 10px 20px;
+}
+#wrapper #top_nav ul.nav  {
+  font-size: 12px;
+  float: right;
+}
+
+#imagewikilogo #logo  {
+	float:	left;
+}
+
+#imagewikilogo #taglinebox  {
+	float:	right;
+	width:	50%;
+}
+
+#tagline {
+	font-size:   20px;
+	margin:	15px 25%;
+	white-space:    nowrap;
+}
+
+
+#header {
+	clear:	both;
+}
+
+#wrapper #header ul.nav li a {
+  clear:	both;
+  font-size: 12px;
+  padding: 0 20px 10px;
+}
+
+#main_nav {
+  background: #ccffff;
+}
+
+#hpcolleft, #hpcolmid, #hncolright {
+	float:	left;
+	width:	29%;
+	margin-left:	3%;
+	display:	inline;
+}
+
+.colin {
+	margin-right:	7px;
+	width:	100%;
+	text-align:	justify;
+}
+
+#newimages img {
+	padding:	15px;
+}
+
+#about_project {	
+}
+
+.main {
+	clear:	both;
+}
+
+
+/* project nav */
+
+#proj_nav li {
+  color: #37c326;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#proj_nav li a {
+  color: #666;
+}
+
+/* footer nav */
+
+#wrapper #footer ul li a {
+  border-left: 1px solid #c1c1c1;
+  color: #c1c1c1;
+  margin-left: 8px;
+  padding-left: 8px;
+}
+
+#wrapper #footer ul li:first-child a {
+  border-left: none;
+  margin-left: none;
+  padding-left: none;
+}
+
+/*------------------------------------------------------------------------
+=Typography
+------------------------------------------------------------------------*/
+
+h1 {
+  font-size: 14px;
+  margin-bottom: 10px;
+ 
+}
+
+strong {
+ font-weight: bold;
+}
+
+em {
+ font-style: italic;
+}

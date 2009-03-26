@@ -1,0 +1,58 @@
+<%
+# TODO this belongs in notes not here
+%>
+<center>
+<div>
+<%
+
+if params[:limit]
+  @limit = params[:limit].to_i
+end
+
+if !defined?(@limit)
+  @limit = 20
+end
+
+if params[:offset]
+  @offset = params[:offset].to_i
+else
+  @offset = 0
+end
+
+# @total = Note.count(:all,:conditions => @conditions )
+@total = 999
+
+# print a certain width of elements
+
+@width = 999 
+@count = 0
+
+# fetch results for range
+
+if defined?(@results) && @results != nil
+else
+  @results = Note.all(
+                     :limit => @limit,
+                     :offset => @offset,
+                     :order => [:id.desc],
+                     :owner_id => @user.id
+                    );
+end
+
+@results.each do |@note|
+ @count = (@count+1).modulo(@width) 
+ break if @count > @limit
+%>
+ <%= partial "/notes/thumb" %>
+ <% if true || @count == 0 %>
+  <div style="clear:both;"></div>
+ <% end %>
+<% end %>
+
+<% if @count != 0 %>
+<div style="clear:both;"></div>
+<% end %>
+
+<% @results = nil %>
+</div>
+</center>
